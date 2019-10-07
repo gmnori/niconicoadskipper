@@ -1,0 +1,17 @@
+// JavaScript source code
+{
+    "name": "NicoNico Ad Skipper",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "ニコニコ動画の広告をスキップします。自己責任でご利用ください。作成者Twitter @gmnoir",
+    "content_scripts": [{
+        "matches": [ "https://www.nicovideo.jp/watch/*" ],
+        "js": ["nicoadskipper.js"]
+    }],
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "permissions": ["activeTab"]
+}
